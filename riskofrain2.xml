@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>risk-of-rain-2</Name>
+  <Repository>avivace/ror2server:latest</Repository>
+  <Registry>https://github.com/avivace/ror2-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/avivace/ror2-server/</Support>
+  <Project/>
+  <Overview>Risk of Rain 2 server</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://githubraw.com/edouble1b/unraid-docker-templates/master/images/synctube.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1527398179</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Risk of Rain 2 server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>27015</HostPort>
+        <ContainerPort>27015</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>27016</HostPort>
+        <ContainerPort>27016</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Game Port" Target="27015" Default="27015" Mode="udp" Description="Container Port: 27015" Type="Port" Display="always" Required="true" Mask="false">27015</Config>
+  <Config Name="Query Port" Target="27016" Default="27016" Mode="udp" Description="Container Port: 27016" Type="Port" Display="always" Required="true" Mask="false">27016</Config>
+  <Config Name="Host Path for /home/steam/ror2ds-mods" Target="/home/steam/ror2ds-mods" Default="/mnt/user/GameServers/ror2" Mode="rw" Description="Container Path: /home/steam/ror2ds-mods" Type="Path" Display="always-hide" Required="true" Mask="false"/>
+
+  <Config Name="R2_ENABLE_MODS" Target="R2_ENABLE_MODS" Default="1" Mode="" Description="Container Variable: R2_ENABLE_MODS" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="R2_HEARTBEAT" Target="R2_HEARTBEAT" Default="0" Mode="" Description="Container Variable: R2_HEARTBEAT" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="R2_PLAYERS" Target="R2_PLAYERS" Default="16" Mode="" Description="Container Variable: R2_PLAYERS" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="R2_PSW" Target="R2_PSW" Default="" Mode="" Description="Container Variable: R2_PSW" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="R2_QUERY_PORT" Target="R2_QUERY_PORT" Default="27016" Mode="" Description="Container Variable: R2_QUERY_PORT" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="R2_SV_PORT" Target="R2_SV_PORT" Default="27015" Mode="" Description="Container Variable: R2_SV_PORT" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+
+</Container>
