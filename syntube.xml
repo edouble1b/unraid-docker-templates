@@ -12,7 +12,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:4200]</WebUI>
   <TemplateURL/>
-  <Icon>http://192.168.2.25:3000/edouble/unraid-docker-templates/master/images/speedtest_icon.png</Icon>
+  <Icon>https://githubraw.com/edouble1b/unraid-docker-templates/master/images/synctube.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled>1527398179</DateInstalled>
