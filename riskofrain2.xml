@@ -41,7 +41,10 @@
   <Labels/>
   <Config Name="Game Port" Target="27015" Default="27015" Mode="udp" Description="Container Port: 27015" Type="Port" Display="always" Required="true" Mask="false">27015</Config>
   <Config Name="Query Port" Target="27016" Default="27016" Mode="udp" Description="Container Port: 27016" Type="Port" Display="always" Required="true" Mask="false">27016</Config>
+
   <Config Name="Host Path for /home/steam/ror2ds-mods" Target="/home/steam/ror2ds-mods" Default="/mnt/user/GameServers/ror2" Mode="rw" Description="Container Path: /home/steam/ror2ds-mods" Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="Host Path for /home/steam/steamcmd" Target="/home/steam/steamcmd" Default="/mnt/user/appdata/ror2/steamcmd" Mode="rw" Description="Container Path: /home/steam/steamcmd" Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="Host Path for /home/steam/ror2-dedicated" Target="/home/steam/ror2-dedicated" Default="/mnt/user/appdata/ror2/dedicated" Mode="rw" Description="Container Path: /home/steam/ror2-dedicated" Type="Path" Display="always-hide" Required="true" Mask="false"/>
 
   <Config Name="R2_ENABLE_MODS" Target="R2_ENABLE_MODS" Default="1" Mode="" Description="Container Variable: R2_ENABLE_MODS" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="R2_HEARTBEAT" Target="R2_HEARTBEAT" Default="0" Mode="" Description="Container Variable: R2_HEARTBEAT" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
