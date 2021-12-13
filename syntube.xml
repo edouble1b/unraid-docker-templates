@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>synctube</Name>
+  <Repository>synctube:latest</Repository>
+  <Registry>https://github.com/RblSb/SyncTube/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/RblSb/SyncTube/issues/</Support>
+  <Project/>
+  <Overview>Watch youtube videos together with synctube</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:4200]</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.2.25:3000/edouble/unraid-docker-templates/master/images/speedtest_icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1527398179</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Synctube will allow multiple users to watch the same video at the same time</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4200</HostPort>
+        <ContainerPort>4200</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI Port" Target="4200" Default="4200" Mode="tcp" Description="Container Port: 4200" Type="Port" Display="always" Required="true" Mask="false">4200</Config>
+</Container>
