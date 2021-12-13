@@ -35,4 +35,5 @@
   <Environment/>
   <Labels/>
   <Config Name="WebUI Port" Target="4200" Default="4200" Mode="tcp" Description="Container Port: 4200" Type="Port" Display="always" Required="true" Mask="false">4200</Config>
+  <Config Name="Host Path for /usr/src/app/user" Target="/config" Default="/mnt/user/appdata/synctube" Mode="rw" Description="Container Path: /usr/src/app/user" Type="Path" Display="always-hide" Required="true" Mask="false"/>
 </Container>
