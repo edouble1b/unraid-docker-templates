@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>Tracer</Name>
+  <Repository>https://github.com/tiberiusferreira/tracer.git</Repository>
+  <Registry>https://github.com/tiberiusferreira/tracer</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/tiberiusferreira/tracer</Support>
+  <Project/>
+  <Overview>A tracing service to display rust tracing logs in a UI.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://githubraw.com/edouble1b/unraid-docker-templates/master/images/tracer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>A tracing service to display rust tracing logs in a UI.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="UI/API Port" Target="4200" Default="4200" Mode="tcp" Description="Container Port: 4200" Type="Port" Display="always" Required="true" Mask="false">4200</Config>
+  <Config Name="Tracing Port" Target="4317" Default="4317" Mode="tcp" Description="Container Port: 4317" Type="Port" Display="always" Required="true" Mask="false">4317</Config>
+
+  <Config Name="ENVIRONMENT" Target="ENVIRONMENT" Default="local" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="The location and auth of the postgres db" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
